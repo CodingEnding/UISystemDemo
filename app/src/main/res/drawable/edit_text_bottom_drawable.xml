@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 获得焦点时 -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/line_pink"/>
+    <!-- 未获得焦点时 -->
+    <item android:state_focused="false"
+        android:drawable="@drawable/line_blue"/>
+    <!-- 默认状态 -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/line_blue"/>
+</selector>

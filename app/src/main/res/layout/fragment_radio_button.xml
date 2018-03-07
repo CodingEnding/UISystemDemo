@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:text="普通RadioButton"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:checkedButton="@id/radio_button_apple">
+        <RadioButton
+            android:id="@+id/radio_button_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="苹果"/>
+        <RadioButton
+            android:id="@+id/radio_button_banana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="香蕉"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_get_checked_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取选中项"/>
+        <Button
+            android:id="@+id/btn_clear_checked_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除选中项"/>
+        <Button
+            android:id="@+id/btn_check_special_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选中指定项"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:text="自定义RadioButton样式"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:checkedButton="@id/radio_button_style_apple"
+        android:layout_marginBottom="8dp">
+        <RadioButton
+            android:id="@+id/radio_button_style_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyRadioButtonStyle"
+            android:text="个性化苹果"/>
+        <RadioButton
+            android:id="@+id/radio_button_style_banana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            style="@style/MyRadioButtonStyle"
+            android:text="个性化香蕉"/>
+    </RadioGroup>
+
+
+</LinearLayout>

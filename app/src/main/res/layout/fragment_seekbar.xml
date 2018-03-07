@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="SeekBar[默认样式]"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_default"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:max="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="SeekBar[Widget.SeekBar]"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_style_normal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        style="@android:style/Widget.SeekBar"
+        android:max="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="SeekBar[Widget.Holo.SeekBar]"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_style_holo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        style="@android:style/Widget.Holo.SeekBar"
+        android:max="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="SeekBar[?android:attr/seekBarStyle]"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_style_attr"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        style="?android:attr/seekBarStyle"
+        android:max="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="SeekBar[自定义样式]"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_style_custom"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:progress="20"
+        android:max="100"
+        android:thumb="@drawable/seekbar_thumb_drawable"
+        android:progressDrawable="@drawable/seekbar_progress_drawable"/>
+
+    <TextView
+        android:id="@+id/text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="当前进度：0"/>
+
+</LinearLayout>

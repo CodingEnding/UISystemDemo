@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下状态 -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/ic_heart_pressed"/>
+    <!-- 未按下状态 -->
+    <item android:state_pressed="false"
+        android:drawable="@drawable/ic_heart_normal"/>
+    <!-- 默认状态 -->
+    <item android:drawable="@drawable/ic_heart_normal"/>
+</selector>

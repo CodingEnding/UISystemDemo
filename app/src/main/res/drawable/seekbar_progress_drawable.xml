@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 轨道背景 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="line">
+            <stroke android:width="2dp" android:color="#aaa"/>
+            <corners android:radius="1dp"/>
+        </shape>
+    </item>
+    <!-- 进度条 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke android:width="2dp" android:color="#3F51B5"/>
+                <corners android:radius="1dp"/>
+            </shape>
+        </clip>
+    </item>
+    <!-- 二级进度条 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="line">
+                <stroke android:width="2dp" android:color="#AF3F51B5"/>
+                <corners android:radius="1dp"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

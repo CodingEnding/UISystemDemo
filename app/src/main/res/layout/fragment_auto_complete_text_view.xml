@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"
+        android:text="普通的AutoCompleteTextView"/>
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_text_view_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:completionThreshold="1"
+        android:dropDownHorizontalOffset="10dp"
+        android:dropDownVerticalOffset="5dp"
+        android:hint="请输入关键词" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"
+        android:text="自定义适配器的AutoCompleteTextView"/>
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:completionThreshold="1"
+        android:hint="请输入书籍关键字"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"
+        android:text="可提示多次的MultiAutoCompleteTextView"/>
+    <MultiAutoCompleteTextView
+        android:id="@+id/multi_auto_complete_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:completionThreshold="1"
+        android:hint="请输入关键字"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"
+        android:text="自定义分隔符的MultiAutoCompleteTextView"/>
+    <MultiAutoCompleteTextView
+        android:id="@+id/multi_auto_complete_text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:completionThreshold="1"
+        android:hint="请输入关键字"/>
+
+</LinearLayout>
+

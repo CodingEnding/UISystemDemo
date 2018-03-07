@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:text="普通ToggleButton"/>
+
+    <ToggleButton
+        android:id="@+id/toggle_button_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:textOn="开启状态"
+        android:textOff="关闭状态"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:text="自定义ToggleButton样式"/>
+
+    <ToggleButton
+        android:id="@+id/toggle_button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:button="@drawable/toggle_button_drawable"
+        android:background="#00000000"
+        android:textOn="@null"
+        android:textOff="@null"
+        android:checked="true" />
+
+</LinearLayout>
+

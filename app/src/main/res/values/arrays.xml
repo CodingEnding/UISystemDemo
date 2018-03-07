@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="normal_spinner_res">
+        <item>选项一</item>
+        <item>选项二</item>
+        <item>选项三</item>
+    </string-array>
+</resources>

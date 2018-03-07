@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 自定义CheckBox的样式 -->
+    <style name="MyCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_box_drawable</item>
+    </style>
+
+    <!-- 自定义RadioButton的样式 -->
+    <style name="MyRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radio_button_drawable</item>
+    </style>
+
+    <!-- 自定义SwitchCompat样式 -->
+    <style name="SwitchCompatStyle" parent="Theme.AppCompat.Light">
+        <!-- 开启状态下滑块的颜色以及轨道的颜色（30%透明度的该颜色） -->
+        <item name="colorControlActivated">#ff0099cc</item>
+        <item name="colorSwitchThumbNormal">#ffffff</item><!-- 关闭状态下滑块的颜色 -->
+        <item name="android:colorForeground">#aaa</item><!-- 关闭状态下轨道的颜色（30%透明度的该颜色） -->
+    </style>
+
+</resources>
+
+
+

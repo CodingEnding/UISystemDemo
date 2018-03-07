@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:textStyle="bold|italic"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="这是一段测试文字。用于测试TextView的大小写、字体风格、最大最少行数、省略符号等"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableBottom="@mipmap/ic_launcher"
+            android:drawableRight="@mipmap/ic_launcher"
+            android:text="这是一段测试文字。用于测试TextView的drawable"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:autoLink="email"
+            android:textColorLink="@color/colorPrimary"
+            android:text="这是一段测试文字。用于测试邮箱链接test@email.com以及链接颜色。"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="这是一段测试文字。用于测试TextView中多行文本之间的行间距和行间距倍数属性，为此需多复制几行文字。"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.2"
+            android:textIsSelectable="true"
+            android:textColorHighlight="#FF5544FF"
+            android:text="这是一段测试文字。用于测试TextView中的文字是否可选中以及选中部分高亮显示的颜色。"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:textScaleX="1.5"
+            android:text="这是一段测试文字。用于测试横向拉伸属性。"/>
+
+        <TextView
+            android:id="@+id/text_view_html_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/text_view_spannable_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

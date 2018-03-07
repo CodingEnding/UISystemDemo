@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 开启状态 -->
+    <item android:state_checked="true"
+        android:drawable="@drawable/ic_toggle_on"/>
+    <!-- 关闭状态 -->
+    <item android:state_checked="false"
+        android:drawable="@drawable/ic_toggle_off"/>
+    <!-- 默认状态 -->
+    <item android:drawable="@drawable/ic_toggle_off"/>
+</selector>

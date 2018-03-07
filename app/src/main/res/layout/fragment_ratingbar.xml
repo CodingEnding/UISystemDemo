@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="普通的RatingBar"/>
+
+    <RatingBar
+        android:id="@+id/rating_bar_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="4.5"
+        android:isIndicator="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="不可交互的RatingBar"/>
+
+    <RatingBar
+        android:id="@+id/rating_bar_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.5"
+        android:isIndicator="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="自定义样式的RatingBar"/>
+
+    <RatingBar
+        android:id="@+id/rating_bar_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="40dp"
+        android:maxHeight="40dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.5"
+        android:isIndicator="false"
+        android:progressDrawable="@drawable/ratingbar_progress_drawable"/>
+
+    <TextView
+        android:id="@+id/text_view_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="false"
+        android:text="当前评分：0"/>
+
+</LinearLayout>
+
