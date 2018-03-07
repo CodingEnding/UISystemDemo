@@ -21,7 +21,7 @@
         android:completionThreshold="1"
         android:dropDownHorizontalOffset="10dp"
         android:dropDownVerticalOffset="5dp"
-        android:hint="请输入关键词" />
+        android:hint="请输入关键词[coding,codingending,...]" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:completionThreshold="1"
-        android:hint="请输入书籍关键字"/>
+        android:hint="请输入书籍关键字[狮子王、...]"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:completionThreshold="1"
-        android:hint="请输入关键字"/>
+        android:hint="请输入关键字[coding,codingending,...]"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:completionThreshold="1"
-        android:hint="请输入关键字"/>
+        android:hint="请输入关键字[coding,codingending,...]"/>
 
 </LinearLayout>
 
