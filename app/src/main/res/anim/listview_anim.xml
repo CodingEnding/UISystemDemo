@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:fromAlpha="0" android:toAlpha="1" android:duration="1000"/>
+    <translate android:fromXDelta="1000" android:toXDelta="0" android:duration="1000"/>
+</set>
+<!-- ListView列表项的入场动画 -->

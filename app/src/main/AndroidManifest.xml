@@ -19,7 +19,8 @@
         <activity android:name=".common.CommonWidgetActivity" />
         <activity android:name=".common.CommonWidgetDemoActivity" />
         <activity android:name=".md.MDWidgetDemoActivity" />
-        <activity android:name=".md.MDWidgetActivity"></activity>
+        <activity android:name=".md.MDWidgetActivity" />
+        <activity android:name=".list.ListViewActivity"></activity>
     </application>
 
 </manifest>
