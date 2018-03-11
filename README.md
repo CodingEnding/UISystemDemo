@@ -5,8 +5,11 @@
 ## 相关博客
 
 > [《Android UI 与文本相关的控件》](http://blog.csdn.net/codingending/article/details/79478477)：包括TextView、EditText、AutoCompleteTextView和MultiAutoCompleteTextView。
+> 
 > [《 Android UI 常用控件讲解》](http://blog.csdn.net/codingending/article/details/79478477)：包括CheckBox、RadioButton、ToggleButton、Switch、ProgressBar、SeekBar、RatingBar、Spinner、ImageButton。
+> 
 > [《Android UI ListView讲解》](http://blog.csdn.net/codingending/article/details/79512087)：详细讲解ListView的使用和常用技巧。
+> 
 > [《 Android UI GridView讲解》](http://blog.csdn.net/CodingEnding/article/details/79518615)：详细讲解GridView的使用方法和常用技巧。
 
 ## 已经完成的演示
