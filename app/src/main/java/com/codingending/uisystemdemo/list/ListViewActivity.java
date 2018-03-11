@@ -27,7 +27,6 @@ import java.util.List;
  * 演示ListView
  * Created by CodingEnding on 2018/3/9.
  */
-
 public class ListViewActivity extends BaseWidgetActivity {
     public static final String TAG="ListViewActivity";
     private ListView normalListView;

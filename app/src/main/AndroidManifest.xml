@@ -20,7 +20,8 @@
         <activity android:name=".common.CommonWidgetDemoActivity" />
         <activity android:name=".md.MDWidgetDemoActivity" />
         <activity android:name=".md.MDWidgetActivity" />
-        <activity android:name=".list.ListViewActivity"></activity>
+        <activity android:name=".list.ListViewActivity" />
+        <activity android:name=".list.GridViewActivity"></activity>
     </application>
 
 </manifest>
