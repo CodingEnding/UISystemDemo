@@ -23,10 +23,12 @@ import javax.crypto.spec.PSource;
 public class StyleGridViewAdapter extends BaseAdapter{
     private Context context;
     private List<Book> dataList;//数据源
+    private LayoutInflater inflater;//布局解析器
 
     public StyleGridViewAdapter(Context context,List<Book> dataList) {
         this.dataList = dataList;
         this.context = context;
+        inflater=LayoutInflater.from(context);
     }
 
     @Override
@@ -49,7 +51,6 @@ public class StyleGridViewAdapter extends BaseAdapter{
         Book book=dataList.get(position);
         ViewHolder viewHolder;
         if(convertView==null){//只有在无法复用View时再重新实例化列表项布局
-            LayoutInflater inflater=LayoutInflater.from(context);
             convertView=inflater.inflate(R.layout.gridview_custom_item,parent,false);
             viewHolder=new ViewHolder();
             viewHolder.bookImageView=convertView.findViewById(R.id.book_image);

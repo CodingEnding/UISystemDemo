@@ -25,10 +25,12 @@ import java.util.List;
 public class StyleListViewAdapter extends BaseAdapter{
     private Context context;
     private List<Book> dataList;//数据源
+    private LayoutInflater inflater;//布局解析器
 
     public StyleListViewAdapter(Context context, List<Book> dataList) {
         this.context = context;
         this.dataList = dataList;
+        inflater=LayoutInflater.from(context);
     }
 
     @Override
@@ -51,8 +53,7 @@ public class StyleListViewAdapter extends BaseAdapter{
         Book book=dataList.get(position);
         ViewHolder viewHolder;
         if(convertView==null){
-            convertView= LayoutInflater.from(context).inflate(
-                    R.layout.listview_custom_item,parent,false);
+            convertView= inflater.inflate(R.layout.listview_custom_item,parent,false);
             viewHolder=new ViewHolder();
             viewHolder.bookImageView=convertView.findViewById(R.id.book_image);
             viewHolder.bookNameView=convertView.findViewById(R.id.book_name);

@@ -15,9 +15,13 @@ import android.widget.Toast;
 
 import com.codingending.uisystemdemo.MainActivity;
 import com.codingending.uisystemdemo.R;
+import com.codingending.uisystemdemo.adapter.MultiListViewAdapter;
 import com.codingending.uisystemdemo.adapter.StyleListViewAdapter;
 import com.codingending.uisystemdemo.base.BaseWidgetActivity;
+import com.codingending.uisystemdemo.bean.BaseMultiBean;
 import com.codingending.uisystemdemo.bean.Book;
+import com.codingending.uisystemdemo.bean.ItemBean;
+import com.codingending.uisystemdemo.bean.TitleBean;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,8 +36,10 @@ public class ListViewActivity extends BaseWidgetActivity {
     private ListView normalListView;
     private ListView customListView;//自定义布局的ListView
     private ListView headerFooterListView;//带列表头/尾的ListView
+    private ListView multiListView;//多状态布局的ListView
     private Button normalBtn;
     private Button customBtn;
+    private Button multiBtn;
     private Button headerFooterBtn;
     private Button addItemBtn;
     private Button scrollBtn;
@@ -127,6 +133,18 @@ public class ListViewActivity extends BaseWidgetActivity {
             }
         });
         customListView.setOnItemLongClickListener(itemLongClickListener);
+
+        //初始化多状态布局的ListView（未设置点击监听）
+        List<BaseMultiBean> multiDataList=new ArrayList<>();
+        multiDataList.add(new TitleBean("第一个区域"));
+        multiDataList.add(new ItemBean(R.mipmap.ic_launcher,"《小王子》"));
+        multiDataList.add(new ItemBean(R.mipmap.ic_launcher,"《狮子王》"));
+        multiDataList.add(new TitleBean("第二个区域"));
+        multiDataList.add(new ItemBean(R.mipmap.ic_launcher,"《资本论》"));
+        multiDataList.add(new ItemBean(R.mipmap.ic_launcher,"《三体》"));
+        multiDataList.add(new ItemBean(R.mipmap.ic_launcher,"《孤独的进化者》"));
+        MultiListViewAdapter multiAdapter=new MultiListViewAdapter(this,multiDataList);
+        multiListView.setAdapter(multiAdapter);
     }
 
     /**
@@ -146,8 +164,10 @@ public class ListViewActivity extends BaseWidgetActivity {
         normalListView=findViewById(R.id.list_view_normal);
         customListView=findViewById(R.id.list_view_custom);
         headerFooterListView=findViewById(R.id.list_view_footer_header);
+        multiListView=findViewById(R.id.list_view_multi);
         normalBtn=findViewById(R.id.btn_list_view_normal);
         customBtn=findViewById(R.id.btn_list_view_custom);
+        multiBtn=findViewById(R.id.btn_list_view_multi);
         headerFooterBtn=findViewById(R.id.btn_list_view_header_footer);
         addItemBtn=findViewById(R.id.btn_list_view_add_item);
         scrollBtn=findViewById(R.id.btn_list_view_scroll);
@@ -159,6 +179,7 @@ public class ListViewActivity extends BaseWidgetActivity {
                 normalListView.setVisibility(View.VISIBLE);
                 customListView.setVisibility(View.GONE);
                 headerFooterListView.setVisibility(View.GONE);
+                multiListView.setVisibility(View.GONE);
             }
         });
         customBtn.setOnClickListener(new View.OnClickListener() {
@@ -167,12 +188,23 @@ public class ListViewActivity extends BaseWidgetActivity {
                 customListView.setVisibility(View.VISIBLE);
                 normalListView.setVisibility(View.GONE);
                 headerFooterListView.setVisibility(View.GONE);
+                multiListView.setVisibility(View.GONE);
             }
         });
         headerFooterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 headerFooterListView.setVisibility(View.VISIBLE);
+                customListView.setVisibility(View.GONE);
+                normalListView.setVisibility(View.GONE);
+                multiListView.setVisibility(View.GONE);
+            }
+        });
+        multiBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                multiListView.setVisibility(View.VISIBLE);
+                headerFooterListView.setVisibility(View.GONE);
                 customListView.setVisibility(View.GONE);
                 normalListView.setVisibility(View.GONE);
             }

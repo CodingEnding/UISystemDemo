@@ -22,19 +22,25 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="默认布局"/>
+            android:text="默认"/>
         <Button
             android:id="@+id/btn_list_view_header_footer"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="带列表头/尾"/>
+            android:text="列表头/尾"/>
         <Button
             android:id="@+id/btn_list_view_custom"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="自定义布局"/>
+            android:text="自定义"/>
+        <Button
+            android:id="@+id/btn_list_view_multi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="多布局"/>
     </LinearLayout>
 
     <LinearLayout
@@ -107,6 +113,14 @@
         android:listSelector="#00000000"
         android:headerDividersEnabled="true"
         android:footerDividersEnabled="true"
+        android:visibility="gone"/>
+
+    <!-- 多状态布局的ListView -->
+    <ListView
+        android:id="@+id/list_view_multi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone"/>
 
 </LinearLayout>
