@@ -21,7 +21,8 @@
         <activity android:name=".md.MDWidgetDemoActivity" />
         <activity android:name=".md.MDWidgetActivity" />
         <activity android:name=".list.ListViewActivity" />
-        <activity android:name=".list.GridViewActivity"></activity>
+        <activity android:name=".list.GridViewActivity" />
+        <activity android:name=".list.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>

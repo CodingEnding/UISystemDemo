@@ -12,6 +12,8 @@
 > 
 > [《 Android UI GridView讲解》](http://blog.csdn.net/CodingEnding/article/details/79518615)：详细讲解GridView的使用方法和常用技巧。
 
+> [Android UI RecyclerView讲解](https://blog.csdn.net/codingending/article/details/79816325)：详细讲解RecyclerView的使用方法和常用技巧。
+
 ## 已经完成的演示
 
 **1.TextView**
@@ -72,11 +74,21 @@
 
 <div style="float:none;clear:both;"></div>
 
-**14.ListView**
+**14.GridView**
 
 <img src="http://img.blog.csdn.net/20180311182904280?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ29kaW5nRW5kaW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%">
 
 <img src="http://img.blog.csdn.net/20180311181429966?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ29kaW5nRW5kaW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%">
+
+**15.RecyclerView**
+
+<img src="https://img-blog.csdn.net/20180404133359839?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0VuZGluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%">
+
+<img src="https://img-blog.csdn.net/20180404133534797?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0VuZGluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%">
+
+<img src="https://img-blog.csdn.net/20180404133955603?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0VuZGluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%">
+
+<img src="https://img-blog.csdn.net/20180404134029732?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NvZGluZ0VuZGluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%">
 
 ## 作者的博客地址
 

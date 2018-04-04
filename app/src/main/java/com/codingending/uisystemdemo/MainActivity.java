@@ -8,6 +8,7 @@ import android.view.View;
 import com.codingending.uisystemdemo.common.CommonWidgetActivity;
 import com.codingending.uisystemdemo.list.GridViewActivity;
 import com.codingending.uisystemdemo.list.ListViewActivity;
+import com.codingending.uisystemdemo.list.RecyclerViewActivity;
 import com.codingending.uisystemdemo.md.MDWidgetActivity;
 
 /**
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.to_recycler_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
             }
         });
     }
