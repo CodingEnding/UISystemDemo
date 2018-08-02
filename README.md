@@ -18,11 +18,11 @@
 
 **1.TextView**
 
-<img src="http://img.blog.csdn.net/2018030723003956?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ29kaW5nRW5kaW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%"/>
+<img src="https://github.com/CodingEnding/UISystemDemo/blob/master/screenshots/pic1.png" width="30%"/>
 
 **2.EditText**
 
-<img src="http://img.blog.csdn.net/20180307230518390?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQ29kaW5nRW5kaW5n/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" width="30%"/>
+<img src="https://github.com/CodingEnding/UISystemDemo/blob/master/screenshots/pic3.png" width="30%"/>
 
 **3.AutoCompleteTextView和MultiAutoCompleteTextView**
 
